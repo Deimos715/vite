@@ -1,0 +1,23 @@
+/*
+* Connecting SCSS sources Bootstrap 5
+*/
+
+// @import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+/*
+* Connecting SCSS sources Bootstrap 5
+*/
+
+@import "../../node_modules/reset-css/sass/reset.scss";
+
+
+/*
+* fonts
+*/
+@import "fonts/fonts.scss";
+
+
+/*
+* my scss
+*/
+@import "style/style.scss";
