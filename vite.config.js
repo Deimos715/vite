@@ -20,8 +20,11 @@ export default defineConfig({
     }
   },
   build: {
-    assetsInlineLimit: 0,
     rollupOptions: {
+      input: {
+        main: path.resolve(__dirname, 'index.html'),
+        exemple: path.resolve(__dirname, 'exemple.html')
+      },
       output: {
         assetFileNames: (assetInfo) => {
           const extType = assetInfo.name.split('.').pop();
@@ -36,7 +39,8 @@ export default defineConfig({
           }
           return 'assets/[name]-[hash][extname]';
         },
-        entryFileNames: 'assets/js/main.js',
+        chunkFileNames: 'assets/js/main.js', //Для одной страницы
+        // entryFileNames: 'assets/js/main.js', //Для 2-х и более страниц
       }
     }
   },
