@@ -3,6 +3,7 @@ import path from 'path';
 import copy from 'rollup-plugin-copy';
 
 export default defineConfig({
+  base: './', //базовый путь проекта, что означает, что все ссылки на ресурсы в проекте будут относительными
   plugins: [
     copy({
       targets: [
