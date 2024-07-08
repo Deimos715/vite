@@ -40,8 +40,8 @@ export default defineConfig({
           }
           return 'assets/[name]-[hash][extname]';
         },
-        chunkFileNames: 'assets/js/main.js', //Для одной страницы
-        // entryFileNames: 'assets/js/main.js', //Для 2-х и более страниц
+        chunkFileNames: 'assets/js/main.js', //Для 2-х и более страниц
+        // entryFileNames: 'assets/js/main.js', //Для одной страницы
       }
     }
   },

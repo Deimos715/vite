@@ -9,14 +9,14 @@
 * Connecting SCSS sources normalize-css
 */
 
-// @import "../../node_modules/normalize.css/normalize.css";
+@import "normalize/normalize.scss";
 
 
 /*
 * Connecting SCSS sources reset-css
 */
 
-@import "../../node_modules/reset-css/sass/reset.scss";
+@import "reset/reset.scss";
 
 
 /*
