@@ -33,12 +33,12 @@ export default defineConfig({
             return 'assets/fonts/[name][extname]';
           }
           if (/css/i.test(extType)) {
-            return 'assets/css/style.css';
+            return 'assets/css/style.min.css';
           }
           if (/png|jpe?g|gif|svg|webp/i.test(extType)) {
-            return 'assets/[name][extname]';
+            return 'assets/img/[name][extname]';
           }
-          return 'assets/[name]-[hash][extname]';
+          return 'assets/img/[name]-[hash][extname]';
         },
         chunkFileNames: 'assets/js/main.js', //Для 2-х и более страниц
         // entryFileNames: 'assets/js/main.js', //Для одной страницы
