@@ -27,10 +27,20 @@ a {
     text-decoration: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: $font-body;
+}
+
 .container {
     max-width: 1100px;
     margin: 0 auto;
 }
+
+
 
 // .img {
 //     background-image: url('#{$img-path}img.png');
